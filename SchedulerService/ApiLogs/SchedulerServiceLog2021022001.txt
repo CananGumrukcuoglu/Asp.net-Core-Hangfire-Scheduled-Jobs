@@ -1,0 +1,50 @@
+2021-02-20 01:06:16.080 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 01:06:16.119 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 01:06:16.298 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 01:06:16.298 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 01:06:16.298 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 01:06:16.298 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 01:06:16.298 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 01:06:16.479 +03:00 [INF] Server 16543409-9a4a-41f5-b871-d29a70679c13 successfully announced in 131.6959 ms
+2021-02-20 01:06:16.484 +03:00 [INF] Server 16543409-9a4a-41f5-b871-d29a70679c13 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 01:06:16.538 +03:00 [INF] 4 servers were removed due to timeout
+2021-02-20 01:06:16.908 +03:00 [INF] Server 16543409-9a4a-41f5-b871-d29a70679c13 all the dispatchers started
+2021-02-20 01:06:17.426 +03:00 [INF] Hangire is up and running
+2021-02-20 01:06:17.447 +03:00 [WRN] Failed to process the job '31': an exception occurred. Retry attempt 3 of 5 will be performed in 00:01:16.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 01:06:18.403 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 01:06:18.403 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 01:06:18.403 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 01:06:18.403 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 01:06:18.403 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 01:06:18.448 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 01:06:18.448 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 01:06:18.448 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 01:06:18.448 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 01:06:18.448 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 01:06:18.452 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 01:06:18.452 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 01:06:18.452 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 01:06:18.452 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 01:06:18.452 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 01:06:18.461 +03:00 [INF] Server integration:24628:095e20e4 successfully announced in 7.8452 ms
+2021-02-20 01:06:18.461 +03:00 [INF] Server mail:24628:70dc73bd successfully announced in 7.5875 ms
+2021-02-20 01:06:18.484 +03:00 [INF] Server mail:24628:70dc73bd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 01:06:18.485 +03:00 [INF]

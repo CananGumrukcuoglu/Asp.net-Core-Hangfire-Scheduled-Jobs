@@ -1,0 +1,567 @@
+2021-02-20 09:08:23.722 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:08:23.794 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:08:23.978 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:08:23.978 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:08:23.978 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:08:23.978 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:08:23.978 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:08:24.368 +03:00 [INF] Server 6c0c7b1f-4a02-40f0-95a8-f92e09b6a176 successfully announced in 336.9297 ms
+2021-02-20 09:08:24.376 +03:00 [INF] Server 6c0c7b1f-4a02-40f0-95a8-f92e09b6a176 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:08:24.502 +03:00 [INF] 4 servers were removed due to timeout
+2021-02-20 09:08:24.890 +03:00 [INF] Server 6c0c7b1f-4a02-40f0-95a8-f92e09b6a176 all the dispatchers started
+2021-02-20 09:08:25.185 +03:00 [INF] Hangire is up and running
+2021-02-20 09:08:25.201 +03:00 [WRN] Failed to process the job '34': an exception occurred. Retry attempt 3 of 5 will be performed in 00:01:52.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:08:25.303 +03:00 [WRN] Recurring job 'BirthdayPromotionJob' can't be scheduled due to an error and will be retried in 00:00:15.
+System.InvalidOperationException: Recurring job can't be scheduled, see inner exception for details.
+ ---> Hangfire.Common.JobLoadException: Could not load the job. See inner exception for the details.
+ ---> System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.IBirthdayPromotionJob` does not contain a method with signature `CreateBirthdayPromotion()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+   --- End of inner exception stack trace ---
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+   at Hangfire.RecurringJobEntity..ctor(String recurringJobId, IDictionary`2 recurringJob, ITimeZoneResolver timeZoneResolver, DateTime now)
+   --- End of inner exception stack trace ---
+   at Hangfire.Server.RecurringJobScheduler.ScheduleRecurringJob(BackgroundProcessContext context, IStorageConnection connection, String recurringJobId, RecurringJobEntity recurringJob, DateTime now)
+2021-02-20 09:08:26.218 +03:00 [WRN] Failed to process the job '31': an exception occurred. Retry attempt 4 of 5 will be performed in 00:03:12.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:08:26.271 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:08:26.271 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:08:26.271 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:08:26.271 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:08:26.271 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:08:26.278 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:08:26.278 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:08:26.278 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:08:26.278 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:08:26.279 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:08:26.285 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:08:26.285 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:08:26.285 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:08:26.285 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:08:26.285 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:08:26.292 +03:00 [INF] Server mail:2374:89604411 successfully announced in 13.7808 ms
+2021-02-20 09:08:26.292 +03:00 [INF] Server integration:2374:1d933ee5 successfully announced in 7.8479 ms
+2021-02-20 09:08:26.295 +03:00 [INF] hangfire test log
+2021-02-20 09:08:26.297 +03:00 [INF] Server mail:2374:89604411 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:08:26.320 +03:00 [INF] Server integration:2374:1d933ee5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:08:26.321 +03:00 [INF] Server excel:2374:495a5e30 successfully announced in 26.117 ms
+2021-02-20 09:08:26.347 +03:00 [INF] Server excel:2374:495a5e30 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:08:26.646 +03:00 [INF] Server mail:2374:89604411 all the dispatchers started
+2021-02-20 09:08:26.711 +03:00 [WRN] Failed to process the job '37': an exception occurred. Retry attempt 1 of 5 will be performed in 00:00:27.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:08:26.915 +03:00 [INF] Server integration:2374:1d933ee5 all the dispatchers started
+2021-02-20 09:08:26.965 +03:00 [INF] Server excel:2374:495a5e30 all the dispatchers started
+2021-02-20 09:08:27.829 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ThrowResponseAlreadyStartedException(String value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Hangfire.Dashboard.AspNetCoreDashboardMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Builder.Extensions.MapMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-20 09:08:27.830 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2021-02-20 09:08:27.833 +03:00 [ERR] Connection id "0HM6LCNO43MMI", Request id "0HM6LCNO43MMI:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationExcep2021-02-20 09:12:39.244 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:12:39.280 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:12:39.462 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:12:39.462 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:12:39.463 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:12:39.463 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:12:39.463 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:12:39.682 +03:00 [INF] Server 0857cf70-0d40-496d-a1f6-ee828bfef455 successfully announced in 149.9039 ms
+2021-02-20 09:12:39.687 +03:00 [INF] Server 0857cf70-0d40-496d-a1f6-ee828bfef455 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:12:39.923 +03:00 [INF] Server 0857cf70-0d40-496d-a1f6-ee828bfef455 all the dispatchers started
+2021-02-20 09:12:40.089 +03:00 [INF] Hangire is up and running
+2021-02-20 09:12:40.102 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:12:40.102 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:12:40.102 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:12:40.102 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:12:40.102 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:12:40.150 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:12:40.150 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:12:40.150 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:12:40.150 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:12:40.150 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:12:40.174 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:12:40.174 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:12:40.174 +03:00 [INF] Server mail:3068:b7fdf8ac successfully announced in 23.2336 ms
+2021-02-20 09:12:40.174 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:12:40.174 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:12:40.174 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:12:40.175 +03:00 [INF] Server mail:3068:b7fdf8ac is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:12:40.202 +03:00 [INF] Server integration:3068:1c5893eb successfully announced in 28.217 ms
+2021-02-20 09:12:40.205 +03:00 [INF] hangfire test log
+2021-02-20 09:12:40.207 +03:00 [INF] Server integration:3068:1c5893eb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:12:40.232 +03:00 [INF] Server excel:3068:57504718 successfully announced in 28.9948 ms
+2021-02-20 09:12:40.259 +03:00 [INF] Server excel:3068:57504718 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher,2021-02-20 09:14:09.023 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:14:09.061 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:14:09.201 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:14:09.201 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:14:09.202 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:14:09.202 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:14:09.202 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:14:09.404 +03:00 [INF] Server dc766c2a-7ce3-40db-9d25-6c48dc65fa97 successfully announced in 155.1632 ms
+2021-02-20 09:14:09.410 +03:00 [INF] Server dc766c2a-7ce3-40db-9d25-6c48dc65fa97 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:14:09.909 +03:00 [INF] Server dc766c2a-7ce3-40db-9d25-6c48dc65fa97 all the dispatchers started
+2021-02-20 09:14:10.091 +03:00 [INF] Hangire is up and running
+2021-02-20 09:14:10.110 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:14:10.110 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:14:10.110 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:14:10.110 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:14:10.110 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:14:10.132 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:14:10.132 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:14:10.132 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:14:10.132 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:14:10.132 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:14:10.154 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:14:10.154 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:14:10.155 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:14:10.155 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:14:10.155 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:14:10.160 +03:00 [INF] Server mail:3477:456b6858 successfully announced in 27.7456 ms
+2021-02-20 09:14:10.160 +03:00 [INF] Server integration:3477:ef3b6299 successfully announced in 5.595 ms
+2021-02-20 09:14:10.161 +03:00 [INF] hangfire test log
+2021-02-20 09:14:10.226 +03:00 [INF] Server mail:3477:456b6858 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:14:10.228 +03:00 [INF] Server integration:3477:ef3b6299 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:14:10.256 +03:00 [INF] Server excel:3477:051c7060 successfully announced in 29.3784 ms
+2021-02-20 09:14:10.300 +03:00 [INF] Server excel:3477:051c7060 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, 2021-02-20 09:22:17.117 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:22:17.152 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:22:17.278 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:22:17.278 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:22:17.278 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:22:17.278 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:22:17.279 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:22:17.549 +03:00 [INF] Server 872ee877-e3d0-4793-8f1c-4469d60d7bfa successfully announced in 201.9493 ms
+2021-02-20 09:22:17.563 +03:00 [INF] Server 872ee877-e3d0-4793-8f1c-4469d60d7bfa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:22:17.594 +03:00 [INF] 12 servers were removed due to timeout
+2021-02-20 09:22:17.988 +03:00 [INF] Server 872ee877-e3d0-4793-8f1c-4469d60d7bfa all the dispatchers started
+2021-02-20 09:22:18.316 +03:00 [INF] Hangire is up and running
+2021-02-20 09:22:18.374 +03:00 [WRN] Failed to process the job '48': an exception occurred. Retry attempt 2 of 5 will be performed in 00:00:52.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:22:18.422 +03:00 [ERR] Failed to process the job '34': an exception occurred.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:22:18.506 +03:00 [ERR] Failed to process the job '37': an exception occurred.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:22:19.300 +03:00 [ERR] Failed to process the job '31': an exception occurred.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:22:19.314 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:22:19.314 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:22:19.314 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:22:19.314 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:22:19.314 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:22:19.357 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:22:19.357 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:22:19.357 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:22:19.357 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:22:19.357 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling in2021-02-20 09:26:14.149 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:26:14.180 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:26:14.335 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:26:14.336 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:26:14.336 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:26:14.336 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:26:14.336 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:26:14.530 +03:00 [INF] Server 4fcb8cfe-0179-4161-a440-b4526da51760 successfully announced in 157.8586 ms
+2021-02-20 09:26:14.546 +03:00 [INF] Server 4fcb8cfe-0179-4161-a440-b4526da51760 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:26:14.972 +03:00 [INF] Server 4fcb8cfe-0179-4161-a440-b4526da51760 all the dispatchers started
+2021-02-20 09:26:15.332 +03:00 [INF] Hangire is up and running
+2021-02-20 09:26:15.396 +03:00 [WRN] Failed to process the job '51': an exception occurred. Retry attempt 4 of 5 will be performed in 00:01:48.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.NotSetAttemptCount() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:26:16.384 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:26:16.384 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:26:16.384 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:26:16.384 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:26:16.384 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:26:16.392 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:26:16.392 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:26:16.392 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:26:16.392 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:26:16.392 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:26:16.414 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:26:16.414 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:26:16.414 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:26:16.414 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:26:16.414 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:26:16.414 +03:00 [INF] Server mail:5580:7993331e successfully announced in 22.1015 ms
+2021-02-20 09:26:16.418 +03:00 [INF] Server integration:5580:f850cda8 successfully announced in 4.332 ms
+2021-02-20 09:26:16.418 +03:00 [INF] Server mail:5580:7993331e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:26:16.422 +03:00 [INF] Server excel:5580:27eb7264 successfully announced in 3.5727 ms
+2021-02-20 09:2021-02-20 09:30:57.494 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:30:57.530 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:30:57.675 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:30:57.675 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:30:57.675 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:30:57.675 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:30:57.676 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:30:57.905 +03:00 [INF] Server 8179d92c-6a1b-4de8-8455-0787ca5668ff successfully announced in 184.8778 ms
+2021-02-20 09:30:57.910 +03:00 [INF] Server 8179d92c-6a1b-4de8-8455-0787ca5668ff is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:30:57.928 +03:00 [INF] 4 servers were removed due to timeout
+2021-02-20 09:30:58.098 +03:00 [INF] Server 8179d92c-6a1b-4de8-8455-0787ca5668ff all the dispatchers started
+2021-02-20 09:30:58.257 +03:00 [INF] Hangire is up and running
+2021-02-20 09:30:58.262 +03:00 [WRN] Recurring job 'NotSetAttemptCountJob' can't be scheduled due to an error and will be retried in 00:00:15.
+System.InvalidOperationException: Recurring job can't be scheduled, see inner exception for details.
+ ---> Hangfire.Common.JobLoadException: Could not load the job. See inner exception for the details.
+ ---> System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.INotSetAttemptCountJob` does not contain a method with signature `NotSetAttemptCount()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+   --- End of inner exception stack trace ---
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+   at Hangfire.RecurringJobEntity..ctor(String recurringJobId, IDictionary`2 recurringJob, ITimeZoneResolver timeZoneResolver, DateTime now)
+   --- End of inner exception stack trace ---
+   at Hangfire.Server.RecurringJobScheduler.ScheduleRecurringJob(BackgroundProcessContext context, IStorageConnection connection, String recurringJobId, RecurringJobEntity recurringJob, DateTime now)
+2021-02-20 09:30:59.298 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:30:59.298 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:30:59.298 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:30:59.298 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:30:59.298 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:30:59.322 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:30:59.322 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:30:59.322 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:30:59.322 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:30:59.322 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:30:59.346 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:30:59.346 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:30:59.346 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:30:59.346 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:30:59.346 +03:00 [INF] Using the following options2021-02-20 09:32:43.725 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:32:43.757 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:32:43.877 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:32:43.877 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:32:43.878 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:32:43.878 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:32:43.878 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:32:44.124 +03:00 [INF] Server 55bf1f4d-2c0f-4774-9455-3441fe5eaef4 successfully announced in 187.588 ms
+2021-02-20 09:32:44.153 +03:00 [INF] Server 55bf1f4d-2c0f-4774-9455-3441fe5eaef4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:32:44.605 +03:00 [INF] Server 55bf1f4d-2c0f-4774-9455-3441fe5eaef4 all the dispatchers started
+2021-02-20 09:32:44.799 +03:00 [INF] Hangire is up and running
+2021-02-20 09:32:44.826 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:32:44.826 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:32:44.826 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:32:44.826 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:32:44.826 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:32:44.829 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:32:44.829 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:32:44.829 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:32:44.829 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:32:44.851 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:32:44.854 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:32:44.854 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:32:44.854 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:32:44.854 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:32:44.854 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:32:44.855 +03:00 [INF] Server mail:7133:fabc6bdc successfully announced in 25.5608 ms
+2021-02-20 09:32:44.877 +03:00 [INF] Server integration:7133:b93cd881 successfully announced in 22.6929 ms
+2021-02-20 09:32:44.878 +03:00 [INF] Server integration:7133:b93cd881 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:32:44.906 +03:00 [INF] Server mail:7133:fabc6bdc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:32:44.906 +03:00 [INF] Server excel:7133:4cdb14c0 successfully announced in 28.804 ms
+2021-02-20 09:32:44.907 +03:00 [INF] hangfire test log
+2021-02-20 09:32:44.943 +03:00 [INF] Server excel:7133:4cdb14c0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:32:45.355 +03:00 [INF] Server integration:7133:b93cd881 all the dispatchers started
+2021-02-20 09:32:45.442 +03:00 [INF] Server mail:7133:fabc6bdc all the dispatchers started
+2021-02-20 09:32:45.600 +03:00 [INF] Server excel:7133:4cdb14c0 all the dispatchers started
+2021-02-20 09:32:45.888 +03:00 [WRN] Failed to process the job '60': an exception occurred. Retry attempt 3 of 5 will be performed in 00:01:04.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:32:59.818 +03:00 [WRN] Failed to process the job '48': an exception occurred. Retry attempt 6 of 10 will be performed in 00:10:40.
+System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.INotSetAttemptCountJob` does not contain a method with signature `NotSetAttemptCount()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+2021-02-20 09:33:01.672 +03:00 [WRN] Failed to process the job '63': an exception occurred. Retry attempt 1 of 5 will be performed in 00:00:32.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:33:15.459 +03:00 [INF] CPU usage :5.438186311472022
+2021-02-20 09:33:45.098 +03:00 [WRN] Failed to process the job '63': an exception occurred. Retry attempt 2 of 5 will be performed in 00:00:46.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:34:00.021 +03:00 [WRN] Failed to process the job '51': an exception occurred. Retry attempt 6 of 10 will be performed in 00:11:28.
+System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.INotSetAttemptCountJob` does not contain a method with signature `NotSetAttemptCount()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+2021-02-20 09:34:00.074 +03:00 [WRN] Failed to process the job '60': an exception occurred. Retry attempt 4 of 5 will be performed in 00:02:20.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:34:31.730 +03:00 [WRN] Failed to process the job '63': an exception occurred. Retry attempt 3 of 5 will be performed in 00:01:34.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:35:00.990 +03:00 [WRN] Failed to process the job '64': an exception occurred. Retry attempt 1 of 5 will be performed in 00:00:16.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:35:16.717 +03:00 [WRN] Failed to process the job '64': an exception occurred. Retry attempt 2 of 5 will be performed in 00:01:06.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:36:15.257 +03:00 [WRN] Failed to process the job '63': an exception occurred. Retry attemp2021-02-20 09:52:56.880 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:52:56.914 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:52:57.051 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:52:57.051 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:52:57.052 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:52:57.052 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:52:57.052 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:52:57.280 +03:00 [INF] Server 1417f870-a0e7-44f2-b031-e685b20361a5 successfully announced in 183.5795 ms
+2021-02-20 09:52:57.286 +03:00 [INF] Server 1417f870-a0e7-44f2-b031-e685b20361a5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:52:57.367 +03:00 [INF] 4 servers were removed due to timeout
+2021-02-20 09:52:57.773 +03:00 [INF] Server 1417f870-a0e7-44f2-b031-e685b20361a5 all the dispatchers started
+2021-02-20 09:52:58.072 +03:00 [INF] Hangire is up and running
+2021-02-20 09:52:58.085 +03:00 [WRN] Failed to process the job '48': an exception occurred. Retry attempt 7 of 10 will be performed in 00:24:25.
+System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.INotSetAttemptCountJob` does not contain a method with signature `NotSetAttemptCount()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+2021-02-20 09:52:58.164 +03:00 [WRN] Failed to process the job '51': an exception occurred. Retry attempt 7 of 10 will be performed in 00:22:12.
+System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.INotSetAttemptCountJob` does not contain a method with signature `NotSetAttemptCount()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+2021-02-20 09:52:58.180 +03:00 [WRN] Failed to process the job '55': an exception occurred. Retry attempt 7 of 10 will be performed in 00:24:53.
+System.InvalidOperationException: The type `SchedulerService.Jobs.Interfaces.INotSetAttemptCountJob` does not contain a method with signature `NotSetAttemptCount()`
+   at Hangfire.Storage.InvocationData.DeserializeJob()
+2021-02-20 09:52:59.128 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:52:59.128 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:52:59.128 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:52:59.128 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:52:59.128 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:52:59.129 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:52:59.129 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:52:59.129 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:52:59.129 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:52:59.129 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:52:59.154 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:52:59.154 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:52:59.154 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:52:59.154 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:52:59.154 +03:2021-02-20 09:55:14.243 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:55:14.283 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:55:14.430 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:55:14.430 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:55:14.430 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:55:14.430 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:55:14.430 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:55:14.662 +03:00 [INF] Server 42101491-a069-4c7f-b7fa-656959c228f8 successfully announced in 155.9152 ms
+2021-02-20 09:55:14.667 +03:00 [INF] Server 42101491-a069-4c7f-b7fa-656959c228f8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:55:15.064 +03:00 [INF] Server 42101491-a069-4c7f-b7fa-656959c228f8 all the dispatchers started
+2021-02-20 09:55:15.263 +03:00 [INF] Hangire is up and running
+2021-02-20 09:55:16.325 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:55:16.325 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:55:16.325 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:55:16.325 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:55:16.325 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:55:16.332 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:55:16.332 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:55:16.332 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:55:16.332 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:55:16.332 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:55:16.338 +03:00 [INF] Server mail:9281:c97a2131 successfully announced in 5.8803 ms
+2021-02-20 09:55:16.338 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:55:16.339 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:55:16.339 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:55:16.339 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:55:16.339 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:55:16.339 +03:00 [INF] Server mail:9281:c97a2131 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:55:16.390 +03:00 [INF] Server integration:9281:86e81706 successfully announced in 6.3419 ms
+2021-02-20 09:55:16.391 +03:00 [INF] Server excel:9281:6e6de6e8 successfully announced in 23.7187 ms
+2021-02-20 09:55:16.391 +03:00 [INF] hangfire test log
+2021-02-20 09:55:16.417 +03:00 [INF] Server integration:9281:86e81706 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:55:16.417 +03:00 [INF] Server excel:9281:6e6de6e8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, 2021-02-20 09:57:34.358 +03:00 [INF] Start installing Hangfire SQL objects...
+2021-02-20 09:57:34.613 +03:00 [INF] Hangfire SQL objects installed.
+2021-02-20 09:57:34.678 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:57:34.679 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:57:34.679 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:57:34.679 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:57:34.679 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:57:34.775 +03:00 [INF] Server ddc936dc-1da7-4554-9c75-fafde1f7d5d5 successfully announced in 61.178 ms
+2021-02-20 09:57:34.780 +03:00 [INF] Server ddc936dc-1da7-4554-9c75-fafde1f7d5d5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:57:35.213 +03:00 [INF] Server ddc936dc-1da7-4554-9c75-fafde1f7d5d5 all the dispatchers started
+2021-02-20 09:57:35.556 +03:00 [INF] Hangire is up and running
+2021-02-20 09:57:35.598 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:57:35.598 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:57:35.598 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:57:35.598 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:57:35.598 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 5
+    Listening queues: 'general', 'mail'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:57:35.602 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:57:35.602 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:57:35.602 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:57:35.602 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:57:35.602 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 10
+    Listening queues: 'general', 'integration'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:57:35.625 +03:00 [INF] Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'
+2021-02-20 09:57:35.625 +03:00 [INF] Using the following options for SQL Server job storage:
+2021-02-20 09:57:35.625 +03:00 [INF]     Queue poll interval: 00:00:01.
+2021-02-20 09:57:35.625 +03:00 [INF]     Invisibility timeout: 00:15:00.
+2021-02-20 09:57:35.625 +03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 8
+    Listening queues: 'general', 'product', 'customer'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2021-02-20 09:57:35.629 +03:00 [INF] Server integration:10257:0d95cabc successfully announced in 3.3807 ms
+2021-02-20 09:57:35.629 +03:00 [INF] Server mail:10257:581fc915 successfully announced in 27.2211 ms
+2021-02-20 09:57:35.630 +03:00 [INF] hangfire test log
+2021-02-20 09:57:35.630 +03:00 [INF] Server mail:10257:581fc915 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:57:35.630 +03:00 [INF] Server integration:10257:0d95cabc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:57:35.653 +03:00 [INF] Server excel:10257:8f1c2ea5 successfully announced in 24.5983 ms
+2021-02-20 09:57:35.679 +03:00 [INF] Server excel:10257:8f1c2ea5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2021-02-20 09:57:36.016 +03:00 [INF] Server mail:10257:581fc915 all the dispatchers started
+2021-02-20 09:57:36.314 +03:00 [INF] Server integration:10257:0d95cabc all the dispatchers started
+2021-02-20 09:57:36.385 +03:00 [INF] Server excel:10257:8f1c2ea5 all the dispatchers started
+2021-02-20 09:57:50.281 +03:00 [WRN] Failed to process the job '4': an exception occurred. Retry attempt 1 of 5 will be performed in 00:00:17.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:58:26.994 +03:00 [INF] For Ada Lovelace, %6 discount is defined.
+2021-02-20 09:58:26.994 +03:00 [INF] For Grace Hopper, %9 discount is defined.
+2021-02-20 09:58:26.994 +03:00 [INF] For Erna Hoover, %13 discount is defined.
+2021-02-20 09:58:26.994 +03:00 [INF] For Marissa Mayer, %3 discount is defined.
+2021-02-20 09:58:27.139 +03:00 [WRN] Failed to process the job '4': an exception occurred. Retry attempt 2 of 5 will be performed in 00:01:02.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11
+2021-02-20 09:58:27.183 +03:00 [INF] Happy birthday Ada Lovelace. We created a special promotion for you today.
+2021-02-20 09:58:27.183 +03:00 [INF] Happy birthday Grace Hopper. We created a special promotion for you today.
+2021-02-20 09:58:27.183 +03:00 [INF] Happy birthday Erna Hoover. We created a special promotion for you today.
+2021-02-20 09:58:27.183 +03:00 [INF] Happy birthday Marissa Mayer. We created a special promotion for you today.
+2021-02-20 09:58:28.538 +03:00 [INF] CPU usage :0.9947564398542403
+2021-02-20 09:59:29.139 +03:00 [WRN] Failed to process the job '4': an exception occurred. Retry attempt 3 of 5 will be performed in 00:01:37.
+System.NotImplementedException: It will be retried for 10 times by default
+   at SchedulerService.Jobs.Implementations.NotSetAttemptCountJob.Run() in /home/canan/RiderProjects/HangfireSample/SchedulerService/Jobs/Implementations/NotSetAttemptCountJob.cs:line 11

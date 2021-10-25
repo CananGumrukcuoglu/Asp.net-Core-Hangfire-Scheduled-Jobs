@@ -1,0 +1,12 @@
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/bin/Debug/netcoreapp3.1/SchedulerService.Data.deps.json
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/bin/Debug/netcoreapp3.1/SchedulerService.Data.runtimeconfig.json
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/bin/Debug/netcoreapp3.1/SchedulerService.Data.runtimeconfig.dev.json
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/bin/Debug/netcoreapp3.1/SchedulerService.Data.dll
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/bin/Debug/netcoreapp3.1/SchedulerService.Data.pdb
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.csprojAssemblyReference.cache
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.AssemblyInfoInputs.cache
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.AssemblyInfo.cs
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.csproj.CoreCompileInputs.cache
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.dll
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.pdb
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/Debug/netcoreapp3.1/SchedulerService.Data.genruntimeconfig.cache

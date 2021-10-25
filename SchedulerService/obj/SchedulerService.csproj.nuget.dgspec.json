@@ -1,0 +1,287 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/canan/RiderProjects/HangfireSample/SchedulerService/SchedulerService.csproj": {}
+  },
+  "projects": {
+    "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/SchedulerService.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/SchedulerService.Business.csproj",
+        "projectName": "SchedulerService.Business",
+        "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/SchedulerService.Business.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/canan/RiderProjects/HangfireSample/SchedulerService.Dal/SchedulerService.Dal.csproj": {
+                "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Dal/SchedulerService.Dal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/canan/RiderProjects/HangfireSample/SchedulerService.Dal/SchedulerService.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Dal/SchedulerService.Dal.csproj",
+        "projectName": "SchedulerService.Dal",
+        "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Dal/SchedulerService.Dal.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Dal/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/SchedulerService.Data.csproj": {
+                "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/SchedulerService.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/SchedulerService.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/SchedulerService.Data.csproj",
+        "projectName": "SchedulerService.Data",
+        "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/SchedulerService.Data.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/canan/RiderProjects/HangfireSample/SchedulerService/SchedulerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/canan/RiderProjects/HangfireSample/SchedulerService/SchedulerService.csproj",
+        "projectName": "SchedulerService",
+        "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService/SchedulerService.csproj",
+        "packagesPath": "/home/canan/.nuget/packages/",
+        "outputPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/canan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/SchedulerService.Business.csproj": {
+                "projectPath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/SchedulerService.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.19, )"
+            },
+            "Hangfire.Dashboard.Basic.Authentication": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Hangfire.PostgreSql.NetCore": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Logz.Io": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.407/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

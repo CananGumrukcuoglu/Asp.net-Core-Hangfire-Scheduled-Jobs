@@ -1,0 +1,14 @@
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Business.deps.json
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Business.dll
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Business.pdb
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Dal.dll
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Data.dll
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Dal.pdb
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/bin/Debug/netcoreapp3.1/SchedulerService.Data.pdb
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.csprojAssemblyReference.cache
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.AssemblyInfoInputs.cache
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.AssemblyInfo.cs
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.csproj.CoreCompileInputs.cache
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.csproj.CopyComplete
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.dll
+/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/obj/Debug/netcoreapp3.1/SchedulerService.Business.pdb

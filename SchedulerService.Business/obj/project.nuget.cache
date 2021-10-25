@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "WC/4I6Vq+FfoegLYfFg2aDwh2/WhyCw1d2a1qaaZhS7h288mrjilwbx0xMPVXzwYgCC7GWRsO4h7h8b1lm0T5g==",
+  "success": true,
+  "projectFilePath": "/home/canan/RiderProjects/HangfireSample/SchedulerService.Business/SchedulerService.Business.csproj",
+  "expectedPackageFiles": [
+    "/home/canan/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.entityframeworkcore/3.1.12/microsoft.entityframeworkcore.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.entityframeworkcore.abstractions/3.1.12/microsoft.entityframeworkcore.abstractions.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.entityframeworkcore.analyzers/3.1.12/microsoft.entityframeworkcore.analyzers.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.entityframeworkcore.relational/3.1.11/microsoft.entityframeworkcore.relational.3.1.11.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.12/microsoft.extensions.caching.abstractions.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.caching.memory/3.1.12/microsoft.extensions.caching.memory.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.configuration/3.1.12/microsoft.extensions.configuration.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.12/microsoft.extensions.configuration.abstractions.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.configuration.binder/3.1.12/microsoft.extensions.configuration.binder.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.12/microsoft.extensions.dependencyinjection.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.12/microsoft.extensions.dependencyinjection.abstractions.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.logging/3.1.12/microsoft.extensions.logging.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.12/microsoft.extensions.logging.abstractions.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.logging.debug/3.1.12/microsoft.extensions.logging.debug.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.options/3.1.12/microsoft.extensions.options.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/microsoft.extensions.primitives/3.1.12/microsoft.extensions.primitives.3.1.12.nupkg.sha512",
+    "/home/canan/.nuget/packages/npgsql/4.1.8/npgsql.4.1.8.nupkg.sha512",
+    "/home/canan/.nuget/packages/npgsql.entityframeworkcore.postgresql/3.1.11/npgsql.entityframeworkcore.postgresql.3.1.11.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.collections.immutable/1.7.1/system.collections.immutable.1.7.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "/home/canan/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

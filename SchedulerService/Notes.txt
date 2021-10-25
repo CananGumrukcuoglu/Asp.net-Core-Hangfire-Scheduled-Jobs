@@ -1,0 +1,27 @@
+1- How to create role on Postgresql?
+create role hangfire
+login
+password 'dotnetkonf';
+2- How to create database on Postgresql?
+create database sample_db
+owner canan;
+3- How to give authorization to create schema to role/user?(If schema is not initialized manually to create it automatically via hangfire when the scheduler service is initialized.
+grant create on database sample_db to hangfire;
+4- How to prevent delete/enqueue of jobs by users?
+DashboardOptions -> IsReadOnlyFunc = (DashboardContext context) => true
+5-Ef Core Code First Migration
+Select SchedulerService.Data project at Package Console Manager (Visual Studio)
+Or
+cd SchedulerService.Data at Terminal (Jetbrains Rider)
+
+at Terminal (Jetbrains Rider)
+dotnet ef --startup-project ../SchedulerService/ migrations add UserInitial    
+dotnet ef --startup-project ../SchedulerService/ database update --context BookContext   
+
+6- Ef Core Db First Migration For Hangfire Scheme
+dotnet ef dbcontext scaffold "Host=localhost;Database=sample_db;Username=hangfire;Password=BfsB+@MmNu2Vf7av" Npgsql.EntityFrameworkCore.PostgreSQL -o HfModel -c "HfContext"
+
+7- To keep Asp.net Core services alive on IIS
+https://www.taithienbo.com/how-to-auto-start-and-keep-an-asp-net-core-web-application-and-keep-it-running-on-iis/
+
+

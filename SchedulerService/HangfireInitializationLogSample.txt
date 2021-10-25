@@ -1,0 +1,18 @@
+Feb 16, 2021 @ 00:41:58.737	Server 08d6fa4b-5150-46f6-bc91-2419467beec4 all the dispatchers started	
+	Feb 16, 2021 @ 00:41:58.219	Server 08d6fa4b-5150-46f6-bc91-2419467beec4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, Worker, DelayedJobScheduler, RecurringJobScheduler...	
+	Feb 16, 2021 @ 00:41:58.114	Server 08d6fa4b-5150-46f6-bc91-2419467beec4 successfully announced in 382.1238 ms	
+	Feb 16, 2021 @ 00:41:57.838	hangfire test log	
+	Feb 16, 2021 @ 00:41:57.681	    Invisibility timeout: 00:30:00.	
+	Feb 16, 2021 @ 00:41:57.681	    Queue poll interval: 00:00:15.	
+	Feb 16, 2021 @ 00:41:57.681	Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15	
+	Feb 16, 2021 @ 00:41:57.680	Starting Hangfire Server using job storage: 'PostgreSQL Server: Host: localhost, DB: sample_db, Schema: hangfire'	
+	Feb 16, 2021 @ 00:41:57.680	Using the following options for SQL Server job storage:	
+	Feb 16, 2021 @ 00:41:57.545	Hangfire SQL objects installed.	
+	Feb 16, 2021 @ 00:41:57.513	Start installing Hangfire SQL objects...	
+	Feb 16, 2021 @ 00:38:12.266	Server 541a283b-8178-4493-a6fc-1e647cbff451 all the dispatchers started	
+	Feb 16, 2021 @ 00:38:11.284	    Queue poll interval: 00:00:15.	
+	Feb 16, 2021 @ 00:38:11.283	Using the following options for SQL Server job storage:
